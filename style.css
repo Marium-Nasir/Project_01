@@ -13,7 +13,7 @@
     height: 1000vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.75% 1.25% 6% 6%;
+    grid-template-rows: 0.75% 1.25% 6% 7% 0.75% 7% 7% 7% 7% 10%;
 }
 .topbars{
     background-color: white;
@@ -37,25 +37,78 @@
     text-decoration: none;    
 }
 .searchbtns{
-    display: inline-block;
+    display: flex;
+
     position: relative;
     left: 45%;
     margin-top: 0.75% ;
-    margin-left: 3%;
+    /* margin-left: 3%; */
 }
 .searchbtns button{
     border: none;
     background: transparent;
     color: gray;
-   
+    /* margin-left: 0.5rem; */
+    margin-right: 4rem;
 }
 .searchbox{
-    display: inline-block;
+    position: relative;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
    border-radius: 20%;
 }
-.dropdown{
-    display: inline-block;
-    /* margin-left: 0.2%; */
+.searchtext{
+    width: 0rem;
+    border: none;
+    border-radius: 5rem;
+    /* margin-left: 2rem; */
+    padding: 2%;
+    transition: all 0.1s linear;   
+}
+.searchbtn{
+    width: 2rem;
+    height: 2rem;
+    /* background-color: gray; */
+    color: black;
+    position: absolute;
+    /* border: 1px solid black; */
+    /* border: 5rem; */
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+.searchbox:hover > .searchtext{
+    width: 10rem;
+    padding: 2%;
+}
+
+.dropdownbtn li{
+    margin-top: 0.5rem;
+    list-style: none;
+}
+.dropdownbtn li a {
+     text-decoration: none;
+     color: black;
+}
+.sub{
+    display: none;
+}
+.sub li {
+    list-style: none;
+    
+}
+.dropdownbtn li:hover > .sub{
+    position: absolute;
+    display: flex;
+    color: black;
+    background-color: white;
+    z-index: 1;
+    margin: 0%;
+
 }
 .navbar{
    display: flex;
@@ -82,6 +135,7 @@
     padding-left: 5%;
    
 }
+
 .navmenu nav ul li button{
      /* padding: 30%;
       */
@@ -96,6 +150,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+   
 }
 .para{
     width: 60%;
@@ -167,10 +222,165 @@ p{
     position: relative;
     top: 5%;
     left: 12%;
-    background-image: url(/images/advancestats.png);
+    /* background-image: url(/images/advancestats.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    position: sticky;
+    top: 10%;
+}
+.bar button{
+    border: none;
+    background: transparent;
+    margin: 0.5rem;
+}
+.bar button a{
+    text-decoration: none;
+    color: black;
+}
+.bar button a:hover{
+    color: blue;
+}
+.section11{
+    background-color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.text1{
+    box-sizing: border-box;
+    width: 50%;
+    margin: 3rem;
+    
+    /* background-color: aquamarine; */
+}
+.text1 p{
+    color: gray;
+    font-size: 1.25rem;
+}
+.pic1{
+    box-sizing: border-box;
+    height: 75%;
+    width: 50%;
+    margin: 3rem;
+    /* background-color: bisque; */
+    background-image: url(/images/one.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.section22{
+    background-color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.text2{
+    box-sizing: border-box;
+    width: 50%;
+    margin: 3rem;
+    
+    /* background-color: aquamarine; */
+}
+.text2 p{
+    color: gray;
+    font-size: 1.25rem;
+}
+.pic2{
+    box-sizing: border-box;
+    height: 75%;
+    width: 50%;
+    margin: 3rem;
+    /* background-color: bisque; */
+    background-image: url(/images/two.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section33{
+    background-color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.text3{
+    box-sizing: border-box;
+    width: 50%;
+    margin: 3rem;
+    
+    /* background-color: aquamarine; */
+}
+.text3 p{
+    color: gray;
+    font-size: 1.25rem;
+}
+.pic3{
+    box-sizing: border-box;
+    height: 75%;
+    width: 50%;
+    margin: 3rem;
+    /* background-color: bisque; */
+    background-image: url(/images/three.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section44{
+    background-color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.text4{
+    box-sizing: border-box;
+    width: 50%;
+    margin: 3rem;
+    
+    /* background-color: aquamarine; */
+}
+.text4 p{
+    color: gray;
+    font-size: 1.25rem;
+}
+.pic4{
+    box-sizing: border-box;
+    height: 75%;
+    width: 50%;
+    margin: 3rem;
+    /* background-color: bisque; */
+    background-image: url(/images/one.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btnsec
+{
+    color: blue;
+    background: transparent;
+}
+.imgcontainermain{
+    background-color: aliceblue;
+   
+    
+}
+.imgcontainer{
+    height: 90%;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 2% 6.5%;
+    background-image: url(/images/five2bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.span{
+    text-decoration: double;
+}
 
 

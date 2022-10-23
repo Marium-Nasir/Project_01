@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
     <title>project_1</title>
 </head>
 
@@ -35,20 +36,26 @@
                 <button type="button">Login</button>
                 <button type="button">Register</button>
                 <div class="searchbox">
-                    <input type="text" id="txt" placeholder="type to search...">
-                    <a href="#" class="searchbtn"></a>
-                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="searchtext" id="txt" placeholder="type to search...">
+                    <a href="#" class="searchbtn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    
+                    
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="true">
-                        EN
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                <div class="dropdownbtn">
+                 <ul>
+                    <li><a href="#"><i class="fa-solid fa-flag-usa"></i>EN</a>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="#"><i class="fa-duotone fa-flag"></i>FR</a></li>
+                                <li><a href="#"><i class="fa-duotone fa-flag-checkered"></i>DE</a></li>
+                                <li><a href="#"><i class="fa-solid fa-flag-pennant"></i>ES</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                 </ul>
                 </div>
             </div>
         </div>
@@ -60,13 +67,25 @@
             <div class="navmenu">
                 <nav>
                     <ul>
-                        <li>Demos</li>
-                        <li>Blogs</li>
-                        <li>Portfolio</li>
-                        <li>Projects</li>
-                        <li>Extras</li>
-                        <li>Shop</li>
-                        <li>Elements</li>
+                        <li> Demos 
+    
+                        </li>
+                        <li>Blogs
+
+                        </li>
+                        <li>Portfolio 
+
+                        </li>
+                        <li>Projects 
+
+                        </li>
+                        <li>Extras 
+                        </li>
+                        <li>Shop
+                        </li>
+                        <li>Elements 
+
+                        </li>
                         <li><button type="button" class="btn btn-primary btn-lg">Request Demo</button></li>
 
                 </nav>
@@ -86,17 +105,81 @@
 
         <div class="section">
             <div class="navbtns">
-                <div class="one"><button type="button" class="btn btn-lg">Advance Statistics</button></div>
-                <div class="two"><button type="button" class="btn btn-lg">Great User Experience</button></div>
-                <div class="three"><button type="button" class="btn btn-lg">Powerful Admin</button></div>
+                <button id="btn1" type="button" class="one btn btn-lg">Advance Statistics</button>
+                <button id="btn2" type="button" class="two btn btn-lg">Great User Experience</button>
+                <button id="btn3" type="button" class="three btn btn-lg">Powerful Admin</button>
             </div>
             <div class="images">
-                <!-- <img src="/images/advancestats.png" alt=""> -->
+                <img src="/images/advancestats.png" alt="" class="images">
             </div>
+
+
+        </div>
+        <div class="bar">
+            <button type="button"><a href="#section1">Accessibility</a></button>
+            <button type="button"><a href="#section2">Interface</a></button>
+            <button type="button"><a href="#section3">Reporting</a></button>
+            <button type="button"><a href="#section4">Flexibility</a></button>
         </div>
 
-    </div>
+        <div class="section11">
+            <a name="section1"></a>
+            <div class="text1">
+                <h2>Accessible Across All Devices</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia recusandae id, deserunt
+                    pariatur aperiam voluptate suscipit dignissimos animi consequuntur?</p>
+                <button type="button" class="btnsec btn btn-primary btn-lg">Discover More</button>
+            </div>
+            <div class="pic1"></div>
 
+        </div>
+
+        <div class="section22">
+            <a name="section2"></a>
+            <div class="pic2"></div>
+            <div class="text2">
+                <h2>Drag-n-Drop Interface</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia recusandae id, deserunt
+                    pariatur aperiam voluptate suscipit dignissimos animi consequuntur?</p>
+                <button type="button" class="btnsec btn btn-primary btn-lg">Discover More</button>
+            </div>
+
+        </div>
+
+        <div class="section33">
+            <a name="section3"></a>
+            <div class="text3">
+                <h2>Extensive reporting tools</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia recusandae id, deserunt
+                    pariatur aperiam voluptate suscipit dignissimos animi consequuntur?</p>
+                <button type="button" class="btnsec btn btn-primary btn-lg">Discover More</button>
+            </div>
+            <div class="pic3"></div>
+        </div>
+
+        <div class="section44">
+            <a name="section4"></a>
+            <div class="pic4"></div>
+            <div class="text4">
+                <h2>Flexible design components</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia recusandae id, deserunt
+                    pariatur aperiam voluptate suscipit dignissimos animi consequuntur?</p>
+                <button type="button" class="btnsec btn btn-primary btn-lg">Discover More</button>
+            </div>
+
+        </div>
+      
+         <div class="imgcontainermain">
+            <div class="imgcontainer">
+                <div class="textcontainer"></div>
+            </div>
+         </div>   
+       
+
+       
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
